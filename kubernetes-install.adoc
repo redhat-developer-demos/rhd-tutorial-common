@@ -1,6 +1,6 @@
 :profile: tutorial
 
-[tabs]
+[tabs, subs="attributes+,+macros"]
 ====
 Minikube::
 +
