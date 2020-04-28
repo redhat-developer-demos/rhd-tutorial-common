@@ -1,0 +1,67 @@
+:profile: tutorial
+
+[tabs]
+====
+Minikube::
++
+--
+Having `minikube` installed and in your `PATH` and then run:
+
+[source,bash,subs="+macros,+attributes"]
+----
+minikube start --memory=8192 --cpus=2 --kubernetes-version={kubernetes-version} --vm-driver=virtualbox -p {profile}
+----
+
+And the output must be something similar like:
+
+----
+❌  profile "{profile}" not found
+✅  Created a new profile : {profile}
+✅  minikube profile was successfully set to {profile}
+😄  [{tutorial-namespace}] minikube {minikube-version} on Darwin 10.15.2
+✨  Selecting 'virtualbox' driver from user configuration (alternates: [hyperkit])
+🔥  Creating virtualbox VM (CPUs=2, Memory=8192MB, Disk=50000MB) ...
+🐳  Preparing Kubernetes {kubernetes-version} on Docker '19.03.5' ...
+    ▪ apiserver.enable-admission-plugins=LimitRanger,NamespaceExists,NamespaceLifecycle,ResourceQuota,ServiceAccount,DefaultStorageClass,MutatingAdmissionWebhook
+🚜  Pulling images ...
+🚀  Launching Kubernetes ...
+⌛  Waiting for cluster to come online ...
+🏄  Done! kubectl is now configured to use "{profile}"
+----
+
+Finally configure to use minikube internal docker as docker host:
+
+[source,bash,subs="+macros,+attributes"]
+----
+eval $(minikube docker-env -p {profile})
+----
+
+--
+OpenShift::
++
+--
+To run OpenShift4, you need to have one provisioned using https://try.openshift.com[try.openshift.com] or can use any existing OpenShift4 cluster.
+
+Once you have your cluster, you can download the latest OpenShift client(oc) from https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/[here] and add to your path.
+
+
+----
+oc version 
+----
+
+The output should show oc version >=4.2
+
+----
+oc version
+Client Version: openshift-clients-4.3.0-201910250623-88-g6a937dfe
+Kubernetes Version: {kubernetes-version}
+----
+
+Then login into the cluster and run:
+
+[source,bash,subs="+macros,+attributes"]
+----
+oc new-project {profile}
+----
+--
+====
