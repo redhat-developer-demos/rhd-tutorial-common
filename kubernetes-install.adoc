@@ -5,7 +5,7 @@
 Minikube::	
 +	
 --	
-Having `minikube` installed and in your `PATH` and then run:
+Having `minikube` installed and in your `PATH`, then run:
 
 [source,bash,subs="attributes+,+macros"]	
 ----	
