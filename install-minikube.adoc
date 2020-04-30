@@ -1,9 +1,9 @@
-[tabs]
+[tabs, subs="attributes+,+macros"]	
 ====
 MacOS::
 +
 --
-[source, bash-session]
+[source,bash,subs="attributes+,+macros"]
 ----
 mkdir bin && \
 cd bin && \
@@ -11,7 +11,7 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/{minikube-ver
 chmod +x minikube
 ----
 
-[source, bash-session]
+[source,bash,subs="attributes+,+macros"]
 ----
 curl -LO https://storage.googleapis.com/kubernetes-release/release/{kubernetes-version}/bin/darwin/amd64/kubectl && \
 chmod +x kubectl && \
@@ -21,7 +21,7 @@ cd ..
 Linux::
 +
 --
-[source, bash-session]
+[source,bash,subs="attributes+,+macros"]
 ----
 mkdir bin && \
 cd bin && \
@@ -29,7 +29,7 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/{minikube-ver
 chmod +x minikube
 ----
 
-[source, bash-session]
+[source,bash,subs="attributes+,+macros"]
 ----
 curl -LO https://storage.googleapis.com/kubernetes-release/release/{kubernetes-version}/bin/linux/amd64/kubectl && \
 chmod +x kubectl && \
@@ -39,14 +39,14 @@ cd ..
 Windows::
 +
 --
-[source, bash-session]
+[source,bash,subs="attributes+,+macros"]
 ----
 mkdir bin && \
 cd bin && \
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/{minikube-version}/minikube-windows-amd64.exe
 ----
 
-[source, bash-session]
+[source,bash,subs="attributes+,+macros"]
 ----
 curl -LO https://storage.googleapis.com/kubernetes-release/release/{kubernetes-version}/bin/windows/amd64/kubectl && \
 cd ..
