@@ -3,6 +3,6 @@ Before we start setting up the environment, let’s clone the tutorial sources a
 [source,bash,subs="attributes+,+macros"]
 ----
 git clone {tutorial-url} {folder} && \
-export TUTORIAL_HOME="$(pwd)/{folder}"
+export TUTORIAL_HOME="$(pwd)/{folder}" && \
 cd $TUTORIAL_HOME
 ----
