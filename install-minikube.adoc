@@ -4,12 +4,15 @@ MacOS::
 +
 --
 mkdir bin
+
 cd bin
 
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/{minikube-version}/minikube-darwin-amd64
+
 chmod +x minikube
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/{kubernetes-version}/bin/darwin/amd64/kubectl
+
 chmod +x kubectl
 
 cd ..
@@ -18,12 +21,15 @@ Linux::
 +
 --
 mkdir bin
+
 cd bin
 
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/{minikube-version}/minikube-linux-amd64
+
 chmod +x minikube
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/{kubernetes-version}/bin/linux/amd64/kubectl
+
 chmod +x kubectl
 
 cd ..
@@ -32,9 +38,11 @@ Windows::
 +
 --
 mkdir bin
+
 cd bin
 
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/{minikube-version}/minikube-windows-amd64.exe
+
 curl -LO https://storage.googleapis.com/kubernetes-release/release/{kubernetes-version}/bin/windows/amd64/kubectl
 
 cd ..
@@ -49,16 +57,22 @@ MacOS and Linux::
 +
 --
 export MINIKUBE_HOME=$TUTORIAL_HOME;
+
 export PATH=$MINIKUBE_HOME/bin:$PATH
+
 export KUBECONFIG=$MINIKUBE_HOME/.kube/config
+
 export KUBE_EDITOR="code -w"
 --
 Windows::
 +
 --
 set MINIKUBE_HOME=%TUTORIAL_HOME%
+
 set PATH=%MINIKUBE_HOME%/bin:%PATH%
+
 set KUBECONFIG=%MINIKUBE_HOME%/.kube/config
+
 set KUBE_EDITOR="code -w"
 --
 ====
