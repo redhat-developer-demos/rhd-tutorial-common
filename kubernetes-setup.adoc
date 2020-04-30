@@ -9,7 +9,7 @@ Having `minikube` installed and in your `PATH`, then run:
 
 [source,bash,subs="attributes+,+macros"]	
 ----	
-minikube start --memory=8192 --cpus=2 --kubernetes-version={kubernetes-version} --vm-driver=virtualbox -p {profile}	
+minikube start --memory=8192 --cpus=3 --kubernetes-version={kubernetes-version} --vm-driver=virtualbox -p {profile}	
 ----	
 
 And the output must be something similar like:	
