@@ -3,6 +3,7 @@
 MacOS::
 +
 --
+[.console-input]
 [source,bash,subs="attributes+,+macros"]
 ----
 mkdir bin && \
@@ -11,6 +12,7 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/{minikube-ver
 chmod +x minikube
 ----
 
+[.console-input]
 [source,bash,subs="attributes+,+macros"]
 ----
 curl -LO https://storage.googleapis.com/kubernetes-release/release/{kubernetes-version}/bin/darwin/amd64/kubectl && \
@@ -21,6 +23,7 @@ cd ..
 Linux::
 +
 --
+[.console-input]
 [source,bash,subs="attributes+,+macros"]
 ----
 mkdir bin && \
@@ -29,6 +32,7 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/{minikube-ver
 chmod +x minikube
 ----
 
+[.console-input]
 [source,bash,subs="attributes+,+macros"]
 ----
 curl -LO https://storage.googleapis.com/kubernetes-release/release/{kubernetes-version}/bin/linux/amd64/kubectl && \
@@ -39,6 +43,7 @@ cd ..
 Windows::
 +
 --
+[.console-input]
 [source,bash,subs="attributes+,+macros"]
 ----
 mkdir bin && \
@@ -46,6 +51,7 @@ cd bin && \
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/{minikube-version}/minikube-windows-amd64.exe
 ----
 
+[.console-input]
 [source,bash,subs="attributes+,+macros"]
 ----
 curl -LO https://storage.googleapis.com/kubernetes-release/release/{kubernetes-version}/bin/windows/amd64/kubectl && \
@@ -61,6 +67,7 @@ And then set environment variables:
 MacOS and Linux::
 +
 --
+[.console-input]
 [source, bash-session]
 ----
 export MINIKUBE_HOME=$TUTORIAL_HOME;
@@ -72,6 +79,7 @@ export KUBE_EDITOR="code -w"
 Windows::
 +
 --
+[.console-input]
 [source, bash-session]
 ----
 set MINIKUBE_HOME=%TUTORIAL_HOME%

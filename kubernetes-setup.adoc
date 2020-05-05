@@ -7,6 +7,7 @@ Minikube::
 --	
 Having `minikube` installed and in your `PATH`, then run:
 
+[.console-input]
 [source,bash,subs="attributes+,+macros"]	
 ----	
 minikube start --memory=8192 --cpus=3 --kubernetes-version={kubernetes-version} --vm-driver=virtualbox -p {profile}	
@@ -14,6 +15,7 @@ minikube start --memory=8192 --cpus=3 --kubernetes-version={kubernetes-version} 
 
 And the output must be something similar like:	
 
+[.console-output]
 [source,bash,subs="attributes+,+macros"]	
 ----	
 ❌  profile "{profile}" not found	
@@ -32,6 +34,7 @@ And the output must be something similar like:
 
 Finally configure to use minikube internal docker as docker host:	
 
+[.console-input]
 [source,bash,subs="attributes+,+macros"]	
 ----	
 eval $(minikube docker-env -p {profile})	
@@ -47,17 +50,26 @@ Once you have your cluster, you can download the latest OpenShift client(oc) fro
 oc version 	
 ----	
 
-The output should show oc version >=4.2	
+You can check the OpenShift version using:
 
+[.console-input]
 [source,bash,subs="attributes+,+macros"]	
 ----	
 oc version	
+----	
+
+The output should show oc version >=4.2:	
+
+[.console-output]
+[source,bash,subs="attributes+,+macros"]	
+----	
 Client Version: openshift-clients-4.3.0-201910250623-88-g6a937dfe	
 Kubernetes Version: {kubernetes-version}	
 ----	
 
 Then login into the cluster and run:	
 
+[.console-input]
 [source,bash,subs="attributes+,+macros"]	
 ----	
 oc new-project {profile}	
