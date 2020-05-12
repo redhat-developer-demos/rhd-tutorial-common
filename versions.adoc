@@ -1,0 +1,4 @@
+:kubernetes-version: v1.17.4
+:minikube-version: v1.9.2
+:maven-version: 3.6.3
+:java-version: 11
