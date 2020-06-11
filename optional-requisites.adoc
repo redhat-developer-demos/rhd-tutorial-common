@@ -31,6 +31,6 @@ Although they are used in the tutorial, you could use others without any problem
 |
 
 | https://github.com/rakyll/hey[hey]
-| https://storage.googleapis.com/hey-release/hey_darwin_amd64[Download]
+| `brew install hey`
 | https://storage.googleapis.com/jblabs/dist/hey_linux_v0.1.2[Download]
 | https://storage.googleapis.com/jblabs/dist/hey_win_v0.1.2.exe[Download]
