@@ -1,3 +1,5 @@
+include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/master/versions.adoc[]
+
 If you are running this tutorial in Minikube, you need to add more nodes to run this part of the tutorial.
 Check the number of nodes you have delpoyed by running:
 
