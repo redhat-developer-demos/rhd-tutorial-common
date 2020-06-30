@@ -1,0 +1,49 @@
+If you are running this tutorial in Minikube, you need to add more nodes to run this part of the tutorial.
+Check the number of nodes you have delpoyed by running:
+
+[.console-input]
+[source,bash,subs="+macros,+attributes"]
+----
+kubectl get nodes
+----
+
+If only one node is present then you need to create a new node by following the next steps:
+
+[.console-output]
+[source,bash]
+----
+NAME       STATUS     ROLES    AGE     VERSION
+kube       Ready   master   54d     v1.17.3
+----
+
+Having `minikube` installed and in your `PATH`, then run:
+
+[.console-input]
+[source,bash,subs="+macros,+attributes"]
+----
+minikube node add -p {profile}
+----
+
+Or if you do not have enough resources to add a new node with same resources as master node, you can create a new cluster with minial requirements.
+
+[.console-input]
+[source,bash,subs="+macros,+attributes"]
+----
+minikube start --nodes 2 -p multinode --kubernetes-version='{kubernetes-version}' --vm-driver='virtualbox' --memory=2048
+----
+
+[.console-input]
+[source,bash,subs="+macros,+attributes"]
+----
+kubectl get nodes
+----
+
+[.console-output]
+[source,bash]
+----
+NAME       STATUS     ROLES    AGE     VERSION
+kube       Ready   master   54d     v1.17.3
+kube-m02   Ready      <none>   2m50s   v1.17.3
+----
+
+IMPORTANT: Multi-node clusters are currently experimental and might exhibit unintended behavior.
