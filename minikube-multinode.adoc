@@ -14,8 +14,8 @@ If only one node is present then you need to create a new node by following the 
 [.console-output]
 [source,bash]
 ----
-NAME       STATUS     ROLES    AGE     VERSION
-kube       Ready   master   54d     v1.17.3
+NAME       STATUS   ROLES    AGE     VERSION
+kube       Ready    master   54m     v1.17.3
 ----
 
 Having `minikube` installed and in your `PATH`, then run:
@@ -43,9 +43,9 @@ kubectl get nodes
 [.console-output]
 [source,bash]
 ----
-NAME       STATUS     ROLES    AGE     VERSION
-kube       Ready   master   54d     v1.17.3
-kube-m02   Ready      <none>   2m50s   v1.17.3
+NAME       STATUS   ROLES    AGE     VERSION
+kube       Ready    master   54m     v1.17.3
+kube-m02   Ready    <none>   2m50s   v1.17.3
 ----
 
 IMPORTANT: Multi-node clusters are currently experimental and might exhibit unintended behavior.
