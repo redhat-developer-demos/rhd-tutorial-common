@@ -9,8 +9,8 @@ Please have them installed and configured before you get started with any of the
 
 | `Git`
 | https://git-scm.com/download/mac[Download]
-| https://git-scm.com/download/win[Download]
 | https://git-scm.com/download/linux[Download]
+| https://git-scm.com/download/win[Download]
 
 | `Docker`
 | https://docs.docker.com/docker-for-mac/install[Docker for Mac]
@@ -19,13 +19,13 @@ Please have them installed and configured before you get started with any of the
 
 | `VirtualBox`
 | https://download.virtualbox.org/virtualbox/6.1.6/VirtualBox-6.1.6-137129-OSX.dmg[Download]
-| https://download.virtualbox.org/virtualbox/6.1.6/VirtualBox-6.1.6-137129-Win.exe[Download]
 | https://www.virtualbox.org/wiki/Linux_Downloads[Download]
+| https://download.virtualbox.org/virtualbox/6.1.6/VirtualBox-6.1.6-137129-Win.exe[Download]
 
 | https://kubernetes.io/docs/tasks/tools/install-minikube[Minikube] {minikube-version}
 | https://github.com/kubernetes/minikube/releases/download/{minikube-version}/minikube-darwin-amd64[Download]
-| https://github.com/kubernetes/minikube/releases/download/{minikube-version}/minikube-windows-amd64.exe[Download]
 | https://github.com/kubernetes/minikube/releases/download/{minikube-version}/minikube-linux-amd64[Download]
+| https://github.com/kubernetes/minikube/releases/download/{minikube-version}/minikube-windows-amd64.exe[Download]
 
 | `kubectl {kubernetes-version}`
 | https://storage.googleapis.com/kubernetes-release/release/{kubernetes-version}/bin/darwin/amd64/kubectl[Download]
