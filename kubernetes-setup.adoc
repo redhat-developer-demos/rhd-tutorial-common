@@ -7,10 +7,18 @@ Minikube::
 --	
 Having `minikube` installed and in your `PATH`, then run:
 
+**MacOS / Linux:**
 [.console-input]
 [source,bash,subs="attributes+,+macros"]	
 ----	
 minikube start --memory=8192 --cpus=3 --kubernetes-version={kubernetes-version} --vm-driver=virtualbox -p {profile}	
+----	
+
+**Windows:**
+[.console-input]
+[source,bash,subs="attributes+,+macros"]	
+----	
+minikube start --memory=8192 --cpus=3 --kubernetes-version={kubernetes-version} --vm-driver=hyperv -p {profile}	
 ----	
 
 And the output must be something similar like:	
