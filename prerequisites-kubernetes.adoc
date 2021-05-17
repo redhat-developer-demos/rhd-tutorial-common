@@ -34,7 +34,7 @@ Please have them installed and configured before you get started with any of the
 
 | https://github.com/wercker/stern[stern]
 | `brew install stern`
-| https://github.com/wercker/stern/releases/download/1.6.0/stern_linux_amd64[Download]
+| https://github.com/wercker/stern/releases/download/1.11.0/stern_linux_amd64[Download]
 | https://github.com/wercker/stern/releases/download/1.11.0/stern_windows_amd64.exe[Download]
 
 | `Apache Maven {maven-version}`
