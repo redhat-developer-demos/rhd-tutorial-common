@@ -7,11 +7,18 @@ Minikube::
 --	
 Having `minikube` installed and in your `PATH`, then run:
 
-**MacOS / Linux:**
+**MacOS**
 [.console-input]
 [source,bash,subs="attributes+,+macros"]	
 ----	
 minikube start --memory=8192 --cpus=3 --kubernetes-version={kubernetes-version} --vm-driver=virtualbox -p {profile}	
+----
+
+**Linux**
+[.console-input]
+[source,bash,subs="attributes+,+macros"]	
+----	
+minikube start --memory=8192 --cpus=3 --kubernetes-version={kubernetes-version} --vm-driver=kvm2 -p {profile}	
 ----	
 
 **Windows:**
@@ -26,13 +33,13 @@ And the output must be something similar like:
 [.console-output]
 [source,bash,subs="attributes+,+macros"]	
 ----	
-❌  profile "{profile}" not found	
+😄  [{profile}] minikube v1.20.0 on Darwin 11.3	
 ✅  Created a new profile : {profile}	
 ✅  minikube profile was successfully set to {profile}	
-😄  [default] minikube {minikube-version} on Darwin 10.15.2	
+😄  [default] minikube {minikube-version} on Darwin 11.3
 ✨  Selecting 'virtualbox' driver from user configuration (alternates: [hyperkit])	
 🔥  Creating virtualbox VM (CPUs=2, Memory=8192MB, Disk=50000MB) ...	
-🐳  Preparing Kubernetes {kubernetes-version} on Docker '19.03.5' ...	
+🐳  Preparing Kubernetes {kubernetes-version} on Docker '20.10.6' ...	
     ▪ apiserver.enable-admission-plugins=LimitRanger,NamespaceExists,NamespaceLifecycle,ResourceQuota,ServiceAccount,DefaultStorageClass,MutatingAdmissionWebhook	
 🚜  Pulling images ...	
 🚀  Launching Kubernetes ...	
@@ -66,12 +73,12 @@ You can check the OpenShift version using:
 oc version	
 ----	
 
-The output should show oc version >=4.2:	
+The output should show oc version >=4.7:	
 
 [.console-output]
 [source,bash,subs="attributes+,+macros"]	
 ----	
-Client Version: openshift-clients-4.3.0-201910250623-88-g6a937dfe	
+Client Version: 4.7.0-202102130115.p0-c66c03f	
 Kubernetes Version: {kubernetes-version}	
 ----	
 
