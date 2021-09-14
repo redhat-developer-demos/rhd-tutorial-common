@@ -82,12 +82,6 @@ Client Version: 4.7.0-202102130115.p0-c66c03f
 Kubernetes Version: {kubernetes-version}	
 ----	
 
-Then login into the cluster and run:	
-
-[.console-input]
-[source,bash,subs="attributes+,+macros"]	
-----	
-oc new-project {profile}	
-----	
+Then login into the OpenShift cluster using `oc login`
 --	
 ====
