@@ -18,7 +18,7 @@ Please have them installed and configured before you get started with any of the
 | https://docs.docker.com/docker-for-windows/install[Docker for Windows]
 
 | `VirtualBox`
-| https://download.virtualbox.org/virtualbox/6.1.6/VirtualBox-6.1.6-137129-OSX.dmg[Download]
+| https://download.virtualbox.org/virtualbox/6.1.6/VirtualBox-6.1.6-137129-OSX.dmg[Download (for Intel-based Mac)]
 | https://www.virtualbox.org/wiki/Linux_Downloads[Download]
 | https://download.virtualbox.org/virtualbox/6.1.6/VirtualBox-6.1.6-137129-Win.exe[Download]
 
