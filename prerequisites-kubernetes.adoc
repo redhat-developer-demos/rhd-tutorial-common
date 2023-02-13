@@ -38,6 +38,6 @@ Please have them installed and configured before you get started with any of the
 | https://github.com/stern/stern/releases/download/v1.22.0/stern_1.22.0_windows_amd64.tar.gz[Download]
 
 | `Apache Maven {maven-version}`
-| https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz[Download]
-| https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip[Download]
-| https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz[Download]
+| https://archive.apache.org/dist/maven/maven-3/{maven-version}/binaries/apache-maven-{maven-version}-bin.tar.gz[Download]
+| https://archive.apache.org/dist/maven/maven-3/{maven-version}/binaries/apache-maven-{maven-version}-bin.tar.gz[Download]
+| https://archive.apache.org/dist/maven/maven-3/{maven-version}/binaries/apache-maven-{maven-version}-bin.tar.gz[Download]
