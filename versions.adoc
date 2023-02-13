@@ -1,4 +1,4 @@
-:kubernetes-version: v1.23.1
-:minikube-version: v1.25.1
+:kubernetes-version: v1.26.1
+:minikube-version: v1.29.0
 :maven-version: 3.6.3
-:java-version: 11
+:java-version: 17
