@@ -2,7 +2,7 @@ https://developers.redhat.com/developer-sandbox[Developer Sandbox for Red Hat Op
 
 To create your account, register to https://developers.redhat.com/developer-sandbox[Developer Sandbox for Red Hat OpenShift,window='_blank']. From there, click on the red button that says **Start your sandbox for free** as shown in the following image.
 
-image::devsandbox-signup.png[Developer Sandbox Sign-up Page]
+image::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/main/images/devsandbox-signup.png[Developer Sandbox Sign-up Page]
 
 Use your existing Red Hat account or create a new one, then follow the instructions on the screen. You should then be redirected to the Developer Sandbox page again, but this time, you should see a button labelled **Start using your sandbox**. 
 
