@@ -25,10 +25,9 @@ Your private OpenShift environment on Developer Sandbox includes quotas and limi
 
 which is enough to run this workshop.
 
-There are two fixed projects (namespaces):
+There are one fixed project (namespace):
 
 * `<your_username>-dev`
-* `<your_username>-stage`
 
 Please work in the `<your_username>-dev` project.
 ****
