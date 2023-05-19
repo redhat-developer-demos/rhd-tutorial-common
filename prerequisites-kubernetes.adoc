@@ -3,6 +3,8 @@ include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-c
 The following CLI tools are required for running the exercises in this tutorial. 
 Please have them installed and configured before you get started with any of the tutorial chapters.
 
+NOTE: You may install Docker instead of Podman.  Podman is preferred because there is no license requirement.
+
 [cols="4*^,4*.",options="header,+attributes"]
 |===
 |**Tool**|**macOS**|**Fedora**|**windows**
@@ -12,10 +14,10 @@ Please have them installed and configured before you get started with any of the
 | https://git-scm.com/download/linux[Download]
 | https://git-scm.com/download/win[Download]
 
-| `Docker`
-| https://docs.docker.com/docker-for-mac/install[Docker for Mac]
-| `dnf install docker`
-| https://docs.docker.com/docker-for-windows/install[Docker for Windows]
+| `Podman`
+| https://podman-desktop.io/docs/Installation/macos-install[Podman for Mac]
+| https://podman-desktop.io/docs/Installation/linux-install[Podman for Linux]
+| https://podman-desktop.io/docs/Installation/windows-install[Podman for Windows]
 
 | `VirtualBox`
 | https://download.virtualbox.org/virtualbox/6.1.6/VirtualBox-6.1.6-137129-OSX.dmg[Download]
