@@ -1,4 +1,4 @@
-KinD[https://kind.sigs.k8s.io/] is a tool for running local Kubernetes clusters using container “nodes”.
+https://kind.sigs.k8s.io/[KinD] is a tool for running local Kubernetes clusters using container “nodes”.
 kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.
 
 It's really easy to start using KinD with Podman Desktop.
