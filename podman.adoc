@@ -1,0 +1,18 @@
+https://podman-desktop.io[Podman Desktop] is a powerful tool for managing containers and images on your desktop environment. It includes benefits such as running Kubernetes pods, deployment to your Kubernetes and OpenShift clusters, and Docker Desktop extension support. 
+
+Let's take a look at some of the features of Podman Desktop and go through some of the basic steps we've done in this tutorial, on Podman Desktop.
+
+Podman Desktop is available for Linux, macOS, and Windows. You can download the latest version from https://podman-desktop.io/[podman-desktop.io]. 
+
+The installation process is straightforward and only takes a few minutes to complete.
+
+TIP: For MacOS users, you can easily install Podman Desktop using Homebrew. The command is `brew install podman-desktop`.
+
+Once installed, your Podman Desktop dashboard will show the current version of Podman, featured extensions, and a left-hand navigation menu for:
+
+- *Containers*: Create, manage, and delete containers.
+- *Pods*: Create and manage pods, as well as play Kubernetes YAML using Podman or a Kubernetes cluster.
+- *Images*: Pull, build (via Dockerfile), and manage images.
+- *Volumes*: Manage persistent storage for containers.
+
+image::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/main/images/podman-desktop.png[Login To Cluster]

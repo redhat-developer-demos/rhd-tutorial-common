@@ -1,0 +1,20 @@
+KinD[https://kind.sigs.k8s.io/] is a tool for running local Kubernetes clusters using container “nodes”.
+kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.
+
+It's really easy to start using KinD with Podman Desktop.
+Open Podman Desktop and click on bottom gear icon to open the `Settings` options.
+
+Then select `Resources` option, and click on `Create New` button of `Kind` section.
+
+IMPORTANT: In case you've not created yet, you need to create a Podman machine, clicking `Create New` button in `Podman` section.
+
+image::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/main/images/podman-settings.png[Create KinD cluster]
+
+Leave the default configuration values and create the cluster:
+
+image::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/main/images/kind-defaults.png[Create KinD cluster]
+
+Aftera few moments, you'll have the cluster up and running. 
+You can inspect running containers in Podman Desktop, to validate that KinD Pod is running:
+
+image::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/main/images/kind-cluster.png[Running KinD cluster]

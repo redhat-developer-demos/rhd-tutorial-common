@@ -8,6 +8,10 @@ Use your existing Red Hat account or create a new one, then follow the instructi
 
 image::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/main/images/devsandbox-start.png[Developer Sandbox Start Page]
 
+If the following screen is shown select the Red Hat OpenShift option:
+
+image::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/main/images/devsandbox-console.png[Developer Sandbox Console]
+
 Clicking on it opens up the OpenShift login screen where you can log in using the **DevSandbox** button, as seen below.
 
 image::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/main/images/devsandbox-login.png[Log in the Developer Sandbox]
@@ -31,3 +35,19 @@ There are one fixed project (namespace):
 
 Please work in the `<your_username>-dev` project.
 ****
+
+Also, you need to download `oc` CLI which is a `kubectl` wrapper for OpenShift.
+
+Click on the question mark `?` button, select `Command Line Tools`: 
+
+image::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/main/images/devsandbox-question.png[Download CLI]
+
+And finally download the `oc` CLI for your platform:
+
+image::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/main/images/devsandbox-downloadoc.png[Download CLI]
+
+With `oc` downloaded and installed, it's time to login to the cluster, click on your username select `Copy Login command`, and paste it to a terminal window:
+
+image::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/main/images/devsandbox-logincp.png[Login To Cluster]
+
+After that, you can start using the cluster either with `oc` or `kubectl` CLI.
